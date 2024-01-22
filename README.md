@@ -21,7 +21,7 @@ You can publish and run the migrations with:
 
 ``` env
 LOG_CHANNEL=stderr
-LOG_STDERR_FORMATTER="\\Keerill\\LaravelJsonFormatter\\JsonFormatter"
+LOG_STDERR_FORMATTER="\\Keerill\\LaravelJsonFormatter\\LaravelJsonFormatter"
 ```
 
 ### Config
@@ -33,7 +33,7 @@ return [
         'stderr' => [
             'driver' => 'monolog',
             'handler' => StreamHandler::class,
-            'formatter' => Keerill\LaravelJsonFormatter\JsonFormatter::class,
+            'formatter' => Keerill\LaravelJsonFormatter\LaravelJsonFormatter::class,
             'with' => [
                 'stream' => 'php://stderr',
             ],

@@ -4,7 +4,7 @@ namespace Keerill\LaravelJsonFormatter;
 
 use Monolog\Formatter\JsonFormatter as JsonFormatterBase;
 
-final class JsonFormatter extends JsonFormatterBase
+final class LaravelJsonFormatter extends JsonFormatterBase
 {
     /**
      * @param  mixed  $data

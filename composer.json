@@ -32,6 +32,13 @@
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "format": "vendor/bin/pint"
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Keerill\\LaravelJsonFormatter\\LaravelJsonFormatterServiceProvider"
+            ]
+        }
+    },
     "config": {
         "sort-packages": true
     },
